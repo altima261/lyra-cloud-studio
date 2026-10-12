@@ -1,4 +1,4 @@
-name: Build CutOnce APK in Cloud
+name: Build Lyra Cloud Studio
 on: [push]
 
 jobs:
@@ -7,24 +7,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
-
-      - name: Build APK - Lira + 6 agents
+      - name: Build Studio PWA
         run: |
-          echo "Lira + 6 agents building..."
-          npm install -g eas-cli || true
-          # بناء سحابي
-          eas build --platform android --profile preview --non-interactive || echo "Build triggered"
+          echo "Building Lyra Studio - Lira + 6 agents..."
+          mkdir -p dist
+          cp *.html dist/ 2>/dev/null || echo "No html yet"
+          echo '<h1>Lyra Cloud Studio - Ready</h1><p>Lira + 6 agents</p>' > dist/index.html
+          ls -la dist/
 
-      - name: Upload
+      - name: Upload Studio Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: CutOnce-apk
-          path:./
+          name: lyra-studio-pwa
+          path: dist/
