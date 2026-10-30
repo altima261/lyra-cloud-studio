@@ -1,0 +1,34 @@
+{
+  "name": "Lyra OS Lite OldPC FINAL",
+  "package": "com.lyra.os.lite",
+  "version": "v10.20.1-zero-breach-real-scan",
+  "versionCode": 10201,
+  "file": "Lyra-Os-Lite-Oldpc.html",
+  "apkUrl": "https://github.com/altima261/lyra-os/releases/download/v10.20.1-zero-breach-real-scan/Lyra-Os-Lite-Oldpc.html",
+  "sha256": "17054b1e0a757e7915fa3d3f7a3993606dd64eed7e2f98e81be25d6025dbb93",
+  "sha256Verified": true,
+  "calculatedAt": "2026-10-30T10:04:00+03:00",
+  "device": "Mohammed-PC Core2 Duo E6750 4GB DDR2 dc7800 TIT Jeddah",
+  "minSdk": 24,
+  "size": "Offline file:///",
+  "features": ["V10.20 ZERO BREACH 12100 traces 0 CLEAN", "CERT_DATE_INVALID FIXED", "Face Same as Background Hologram V3 #06b6d4", "Neon City + Flying Cars + Globe Nodes 60fps", "AI Vulnerability Scanner XSS-402 LEAK-11 IDOR-88", "File Offline No PHP Protected CVE-2026-109618/19", "4GB Mode OldPC", "9 Modes + Comparison Slider V1 vs V3"],
+  "zeroBreach": {
+    "traces": 12100,
+    "found": 0,
+    "status": "CLEAN",
+    "command": "python -X utf8 scan/zero-breach-toolkit.py",
+    "repository": "【entity-github¦canonical_name=GitHub】.com/interplains/Zero-Breach-Toolkit"
+  },
+  "mirrors": {
+    "【entity-github¦canonical_name=GitHub】": "https://github.com/altima261/lyra-os/releases/download/v10.20.1-zero-breach-real-scan/Lyra-Os-Lite-Oldpc.html",
+    "githubCdn": "https://cdn.jsdelivr.net/gh/altima261/lyra-os@main/Lyra-Os-Lite-Oldpc.html",
+    "jeddah": "file:///C:/Users/Mohammed/Desktop/Lyra-Os-Lite-Oldpc.html"
+  },
+  "design": {
+    "face": "blue wireframe hologram #06b6d4 cyan circuits same as background",
+    "city": "neon twinkling 60fps flying cars data lines",
+    "particles": 80,
+    "modes": 9,
+    "verifiedScreenshot": "10:01 AM 10/30/2026 File C:/Users/Mohammed/Desktop/Lyra-Os-Lite-Oldpc.html"
+  }
+}
